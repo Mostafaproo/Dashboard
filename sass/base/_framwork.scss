@@ -97,6 +97,12 @@
   overflow: hidden;
 }
 
+.resize{
+  resize: none;
+}
+.outline{
+  outline: none;
+}
 @media (max-width: 768px) {
   .hide-mobile {
     display: none;

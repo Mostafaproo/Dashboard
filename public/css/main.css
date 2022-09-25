@@ -84,6 +84,12 @@
 .overflow-h {
   overflow: hidden; }
 
+.resize {
+  resize: none; }
+
+.outline {
+  outline: none; }
+
 @media (max-width: 768px) {
   .hide-mobile {
     display: none; } }
@@ -125,6 +131,10 @@ body {
 ul {
   padding: 0;
   list-style: none; }
+
+input, textarea {
+  outline: none;
+  border: none; }
 
 a,
 a:focus,
@@ -268,16 +278,24 @@ a:hover {
 
 .welcom__body {
   margin-top: 3rem;
-  border-top: 1px solid #EEE;
-  border-bottom: 1px solid #EEE; }
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-size: 1.8rem; }
+  .welcom__body span {
+    font-size: 1.2rem; }
 
 .welcom__body > div {
   flex: 1; }
 
 .welcom__viste {
-  padding: .5rem 1.6rem;
-  border-radius: 14px;
-  color: #EEE;
-  text-align: center; }
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #eee;
+  text-align: center;
+  font-size: 1.2rem; }
   .welcom__viste:hover {
     color: #fff; }
+
+.quick-draft__input, .quick-draft__textarea {
+  padding: 0.5rem;
+  background-color: #f1f1f5f9; }
