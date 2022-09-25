@@ -2,18 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Template</title>
-    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/main.css" />
 </head>
 
 <body>
-
     <!-- START:: Wrapper -->
     <div class="wrapper d-flex">
-
         <!-- Start sidebar -->
         <aside class="sidebar bg-white p-20 p-relative">
             <h3 class="sidebar__logo p-relative text-center mt-0">Mostafa.Inc</h3>
@@ -25,83 +23,113 @@
                     </a>
                 </li>
                 <li class="sidebar__list-items">
-                    <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
+                    <a href="index.html" class="sidebar__item d-flex align-center colo-black b-radius">
                         <i data-feather="settings" class="sidebar__icon" stroke-width="2"></i>
                         <span class="hide-mobile">settings</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
-                    <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
+                    <a href="index.html" class="sidebar__item d-flex align-center colo-black b-radius">
                         <i data-feather="user" class="sidebar__icon" stroke-width="2"></i>
                         <span class="hide-mobile">Profile</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
-                    <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
+                    <a href="index.html" class="sidebar__item d-flex align-center colo-black b-radius">
                         <i data-feather="hard-drive" class="sidebar__icon" stroke-width="2"></i>
                         <span class="hide-mobile">Projects</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
-                    <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
+                    <a href="index.html" class="sidebar__item d-flex align-center colo-black b-radius">
                         <i data-feather="layers" class="sidebar__icon" stroke-width="2"></i>
                         <span class="hide-mobile">Courses</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
-                    <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
+                    <a href="index.html" class="sidebar__item d-flex align-center colo-black b-radius">
                         <i data-feather="users" class="sidebar__icon" stroke-width="2"></i>
                         <span class="hide-mobile">Friends</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
-                    <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
+                    <a href="index.html" class="sidebar__item d-flex align-center colo-black b-radius">
                         <i data-feather="file" class="sidebar__icon" stroke-width="2"></i>
                         <span class="hide-mobile">Files</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
-                    <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
+                    <a href="index.html" class="sidebar__item d-flex align-center colo-black b-radius">
                         <i data-feather="book-open" class="sidebar__icon" stroke-width="2"></i>
                         <span class="hide-mobile">Plans</span>
                     </a>
                 </li>
-
             </ul>
         </aside>
         <!-- End Sidebar -->
 
         <!-- Start ContentPage -->
-        <main class="content w-full">
+        <main class="w-full">
             <header class="header p-20 d-flex bg-white align-center space-between">
                 <!-- Search -->
                 <div class="header__search p-relative">
                     <form action="#">
-                        <input class="header__input" type="search" placeholder="Search...">
+                        <input class="header__input" type="search" placeholder="Search..." />
                         <i data-feather="search" class="header__search-icon" stroke-width="2"></i>
                     </form>
                 </div>
-                <!-- Icons --> 
-                <div class="header__box-icons d-flex align-center " >
-                   <div class="p-relative">
-                    <span class="header__notification-icon ">
-                        <i data-feather="bell" class="header__icon" stroke-width="2"></i>
-                    </span>
-                   </div>
-                    <img class="header__avatar" src="./images/avatar/hacker.png" alt="avatar">
+                <!-- Icons -->
+                <div class="header__box-icons d-flex align-center">
+                    <div class="p-relative">
+                        <span class="header__notification-icon">
+                            <i data-feather="bell" class="header__icon" stroke-width="2"></i>
+                        </span>
+                    </div>
+                    <img class="header__avatar" src="./images/avatar/hacker.png" alt="avatar" />
                 </div>
             </header>
+
+            <!-- Heading -->
+            <h1 class="heading p-relative">Dashboard</h1>
+
+            <!-- Start Content Page -->
+            <div class="content d-grid gap-20">
+                <!-- Start Intro Section -->
+                <section class="welcom overflow-h bg-white b-radius text-center-mobile d-block-mobile">
+                    <div class="welcom__intro p-20 d-flex space-between bg-eee">
+                        <div>
+                            <h2 class="section-title">Welcome</h2>
+                            <p class="sub-title c-gray mt-5">Mostafa</p>
+                        </div>
+                        <img class="welcom__banner" src="./images/banner.webp" alt="banner" draggable="false" />
+                    </div>
+                    <img src="./images/avatar/hacker.png" class="welcom__avatar d-block" alt="header__avatar" />
+                    <div class="welcom__body text-center d-flex p-20 d-block-mobile">
+                        <div>Mostafa <span class="d-block c-gray">Developer</span></div>
+                        <div>80 <span class="d-block c-gray">Projects</span></div>
+                        <div>$85466 <span class="d-block c-gray">Earned</span></div>
+                    </div>
+                    <div class="text-right m-20">
+                        <a href="profile.html" class="welcom__viste d-block-mobile bg-blue">Profile</a>
+                    </div>
+                </section>
+                <!-- End Intro Section -->
+
+                <!-- Start quick draft -->
+                <section class="quick-draft bg-white p-20 b-radius">
+                    <h2 class="section-title">quick draft</h2>
+                    <p class="sub-title c-gray mt-5">Mostafa</p>
+                </section>
+                <!-- End quick draft -->
+            </div>
         </main>
         <!-- End ContentPage -->
     </div>
     <!-- End:: Wrapper -->
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script>
-        feather.replace({ 'stroke-width': 1 })
+        feather.replace({ "stroke-width": 1 });
     </script>
 </body>
 

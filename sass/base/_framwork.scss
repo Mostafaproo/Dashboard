@@ -1,19 +1,61 @@
+// Start Grid System
 .d-flex {
   display: flex;
 }
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .align-center {
   align-items: center;
 }
+
+.d-grid {
+  display: grid;
+}
+.d-block{
+  display: block;
+}
+.gap-20 {
+  gap: 2rem;
+}
+.content {
+  grid-template-columns: repeat(auto-fill, minmax(40.5rem, 1fr));
+  margin-inline: 2rem;
+}
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: minmax(20rem, 1fr);
+    margin-inline: 1rem;
+  }
+  .d-block-mobile {
+    display: block;
+  }
+  .text-center-mobile {
+    text-align: center;
+  }
+}
+// Start Dimnation
 .p-20,
 .m-20 {
-  padding: 20px;
+  padding: 1.5rem;
 }
 .mt-0 {
   margin-top: 0;
 }
-.b-radius {
-  border-radius: 6px;
+.mt-5 {
+  margin-top: 0.5rem;
 }
+.mb-20{
+  margin-bottom: 2rem;
+}
+.b-radius {
+  border-radius: .6rem;
+}
+
+// Start Color
 .bg-white {
   background-color: white;
 }
@@ -26,6 +68,23 @@
 .text-center {
   text-align: center;
 }
+.text-right{
+  text-align: right;
+}
+.c-gray {
+  color: $gray-color;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.bg-blue{
+  background-color: $blue-color;
+}
+.bg-blue:hover{
+  background-color: $blue-alt-color;
+
+}
+// Start Active classes
 .active {
   background-color: #f6f6f6;
 }
@@ -34,11 +93,10 @@
   width: 100%;
 }
 
-.space-between{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.overflow-h{
+  overflow: hidden;
 }
+
 @media (max-width: 768px) {
   .hide-mobile {
     display: none;

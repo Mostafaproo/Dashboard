@@ -1,1 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap');
+
+.heading{
+    text-transform: capitalize;
+    margin:4rem 2rem;
+    font-size: 2rem;
+
+    &::before,
+    &::after{
+        content: '';
+        height: .3rem;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+    }
+    &::before{
+        background-color: #fff;
+        width: 12rem;
+    }
+    &::after{
+        background-color: #000;
+        width: 4rem;
+    }
+}
+
+.section-title{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.sub-title{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
