@@ -7,77 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Template</title>
     <link rel="stylesheet" href="./public/css/main.css">
-    <link rel="stylesheet" href="./public/css/all.min.css">
 </head>
 
 <body>
 
     <!-- START:: Wrapper -->
     <div class="wrapper d-flex">
+
+        <!-- Start sidebar -->
         <aside class="sidebar bg-white p-20 p-relative">
             <h3 class="sidebar__logo p-relative text-center mt-0">Mostafa.Inc</h3>
             <ul>
                 <li class="sidebar__list-items">
                     <a href="index.html" class="sidebar__item active d-flex align-center colo-black b-radius">
-                        <i class="fa-regular fa-chart-bar fa-fw sidebar__icon"></i>
-                        <span class="sidebar__text-item">Dashboard</span>
+                        <i data-feather="bar-chart" class="sidebar__icon" stroke-width="2"></i>
+                        <span class="hide-mobile">Dashboard</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
                     <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
-                        <i class="fa-solid fa-gear fa-fw sidebar__icon"></i>
-                        <span class="sidebar__text-item">settings</span>
+                        <i data-feather="settings" class="sidebar__icon" stroke-width="2"></i>
+                        <span class="hide-mobile">settings</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
                     <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
-                        <i class="fa-regular fa-user fa-fw sidebar__icon"></i>
-                        <span class="sidebar__text-item">Profile</span>
+                        <i data-feather="user" class="sidebar__icon" stroke-width="2"></i>
+                        <span class="hide-mobile">Profile</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
                     <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
-                        <i class="fa-solid fa-diagram-project fa-fw sidebar__icon"></i>
-                        <span class="sidebar__text-item">Projects</span>
+                        <i data-feather="hard-drive" class="sidebar__icon" stroke-width="2"></i>
+                        <span class="hide-mobile">Projects</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
                     <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
-                        <i class="fa-solid fa-graduation-cap fa-fw sidebar__icon"></i>
-                        <span class="sidebar__text-item">Courses</span>
+                        <i data-feather="layers" class="sidebar__icon" stroke-width="2"></i>
+                        <span class="hide-mobile">Courses</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
                     <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
-                        <i class="fa-regular fa-circle-user fa-fw sidebar__icon"></i>
-                        <span class="sidebar__text-item">Friends</span>
+                        <i data-feather="users" class="sidebar__icon" stroke-width="2"></i>
+                        <span class="hide-mobile">Friends</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
                     <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
-                        <i class="fa-regular fa-file fa-fw sidebar__icon"></i>
-                        <span class="sidebar__text-item">Files</span>
+                        <i data-feather="file" class="sidebar__icon" stroke-width="2"></i>
+                        <span class="hide-mobile">Files</span>
                     </a>
                 </li>
                 <li class="sidebar__list-items">
                     <a href="index.html" class="sidebar__item  d-flex align-center colo-black b-radius">
-                        <i class="fa-regular fa-credit-card fa-fw sidebar__icon"></i>
-                        <span class="sidebar__text-item">Plans</span>
+                        <i data-feather="book-open" class="sidebar__icon" stroke-width="2"></i>
+                        <span class="hide-mobile">Plans</span>
                     </a>
                 </li>
 
             </ul>
         </aside>
-        <main class="content">
-            content
+        <!-- End Sidebar -->
+
+        <!-- Start ContentPage -->
+        <main class="content w-full">
+            <header class="header p-20 d-flex bg-white align-center space-between">
+                <!-- Search -->
+                <div class="header__search p-relative">
+                    <form action="#">
+                        <input class="header__input" type="search" placeholder="Search...">
+                        <i data-feather="search" class="header__search-icon" stroke-width="2"></i>
+                    </form>
+                </div>
+                <!-- Icons --> 
+                <div class="header__box-icons d-flex align-center " >
+                   <div class="p-relative">
+                    <span class="header__notification-icon ">
+                        <i data-feather="bell" class="header__icon" stroke-width="2"></i>
+                    </span>
+                   </div>
+                    <img class="header__avatar" src="./images/avatar/hacker.png" alt="avatar">
+                </div>
+            </header>
         </main>
+        <!-- End ContentPage -->
     </div>
     <!-- End:: Wrapper -->
 
 
 
 
-    <script src="./public/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace({ 'stroke-width': 1 })
+    </script>
 </body>
 
 </html>

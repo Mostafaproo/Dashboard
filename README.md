@@ -1,3 +1,3 @@
 ##Dashboard Project
 
-[Comming Soon](https://mostafaproo.github.io/Dashboard/)
+[Dashboard Live](https://mostafaproo.github.io/Dashboard/)

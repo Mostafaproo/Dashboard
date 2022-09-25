@@ -36,21 +36,33 @@
   &__item {
     transition: 0.4s ease-in-out;
     margin-block: 1.6rem;
-    &:hover,
-    .active {
+    &:hover{
       background-color: #f6f6f6;
     }
   }
 
   &__icon {
-    font-size: 1.4rem;
+    width: 1.6rem;
     margin-inline: 1rem;
   }
-
 }
 
-@media  (max-width: 48rem) {
-  .sidebar{
-      width: 6.2rem;
+@media (max-width: 48rem) {
+  .sidebar {
+    width: 7.2rem;
+    padding: 1rem;
+
+    &__logo {
+      font-size: 1.5rem;
+      text-align: justify;
+      writing-mode: vertical-rl;
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+
+    }
   }
 }
