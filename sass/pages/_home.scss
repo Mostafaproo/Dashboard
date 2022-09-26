@@ -122,3 +122,11 @@
     }
   }
 }
+
+// Start tickets satastics
+.tickets{
+  &__box{
+    border: .1rem solid $gray-color;
+    width: calc(50% - 1rem);
+  }
+}

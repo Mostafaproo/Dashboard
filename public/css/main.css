@@ -12,6 +12,9 @@
   align-items: center;
   justify-content: space-between; }
 
+.f-wrap {
+  flex-wrap: wrap; }
+
 .align-center {
   align-items: center; }
 
@@ -65,8 +68,20 @@
 .bg-green {
   background-color: green; }
 
-.colo-blacl {
+.c-black {
   color: black; }
+
+.c-orange {
+  color: orange; }
+
+.c-blue {
+  color: blue; }
+
+.c-green {
+  color: green; }
+
+.c-red {
+  color: #f44336; }
 
 .p-relative {
   position: relative; }
@@ -386,3 +401,7 @@ a:hover {
     left: 50%;
     transform: translate(-50%);
     border-top-color: #0077ff; }
+
+.tickets__box {
+  border: 0.1rem solid #888;
+  width: calc(50% - 1rem); }

@@ -12,7 +12,9 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.f-wrap{
+  flex-wrap: wrap;
+}
 .align-center {
   align-items: center;
 }
@@ -73,8 +75,20 @@
 .bg-green{
   background-color: green;
 }
-.colo-blacl {
+.c-black {
   color: black;
+}
+.c-orange{
+  color: orange;
+}
+.c-blue{
+  color: blue;
+}
+.c-green{
+  color: green;
+}
+.c-red{
+  color: $red-color;
 }
 .p-relative {
   position: relative;
