@@ -403,5 +403,8 @@ a:hover {
     border-top-color: #0077ff; }
 
 .tickets__box {
-  border: 0.1rem solid #888;
+  border: .2rem solid #ccc;
   width: calc(50% - 1rem); }
+  @media (max-width: 768px) {
+    .tickets__box {
+      width: 100%; } }
