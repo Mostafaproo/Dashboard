@@ -287,9 +287,18 @@ a:hover {
     margin-inline: 1rem; }
 
 @media (max-width: 48rem) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 22; }
+  .content-page {
+    margin-left: 6rem; }
   .sidebar {
     width: 7.2rem;
-    padding: 1rem; }
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    top: 0; }
     .sidebar__logo {
       font-size: 1.5rem;
       text-align: justify;

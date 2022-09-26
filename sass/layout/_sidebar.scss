@@ -37,7 +37,7 @@
     transition: 0.4s ease-in-out;
     margin-block: 1.6rem;
     font-size: 1.4rem;
-    &:hover{
+    &:hover {
       background-color: #f6f6f6;
     }
   }
@@ -49,10 +49,20 @@
 }
 
 @media (max-width: 48rem) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 22;
+  }
+  .content-page{
+    margin-left: 6rem;
+  }
   .sidebar {
     width: 7.2rem;
     padding: 1rem;
-
+    position: fixed;
+    bottom: 0;
+    top: 0;
     &__logo {
       font-size: 1.5rem;
       text-align: justify;
@@ -63,7 +73,6 @@
       &::after {
         display: none;
       }
-
     }
   }
 }
