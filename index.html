@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content=" admin template is super flexible, powerful, clean & modern responsive  admin template with unlimited possibilities." />
+    <meta name="keywords"
+        content="admin template, dashboard template, flat admin template, responsive admin template, web app, scss" />
+    <meta name="author" content="MOSTAFA" />
     <title>Dashboard Template</title>
     <link rel="stylesheet" href="./public/css/main.css" />
 </head>
@@ -70,6 +75,7 @@
 
         <!-- Start ContentPage -->
         <main class="w-full">
+            <!-- Start Header -->
             <header class="header p-20 d-flex bg-white align-center space-between">
                 <!-- Search -->
                 <div class="header__search p-relative">
@@ -88,7 +94,7 @@
                     <img class="header__avatar" src="./images/avatar/hacker.png" alt="avatar" />
                 </div>
             </header>
-
+            <!-- End Header -->
             <!-- Heading -->
             <h1 class="heading p-relative">Dashboard</h1>
 
@@ -115,19 +121,81 @@
                 </section>
                 <!-- End Intro Section -->
 
-                <!-- Start quick draft -->
+                <!-- Start quick draft Section -->
                 <section class="quick-draft bg-white p-20 b-radius">
                     <h2 class="section-title">quick draft</h2>
                     <p class="sub-title c-gray mt-5">Write a Draft for your Idea</p>
                     <form action="#">
                         <input type="text" class="quick-draft__input mt-5 w-full mb-20 b-radius" placeholder="Title">
-                        <textarea class="quick-draft__textarea resize w-full b-radius" placeholder="Message"  cols="3" rows="7"></textarea>
+                        <textarea class="quick-draft__textarea resize w-full b-radius" placeholder="Message" cols="3"
+                            rows="7"></textarea>
                     </form>
                     <div class="text-right m-20">
                         <a href="profile.html" class="welcom__viste d-block-mobile bg-blue">Save</a>
                     </div>
                 </section>
-                <!-- End quick draft -->
+                <!-- End quick draft Section -->
+
+                <!-- Start Target Section -->
+                <section class="target bg-white p-20 b-radius">
+                    <h2 class="section-title">Yearly Target</h2>
+                    <p class="sub-title c-gray mt-5">Target Of The Year</p>
+
+                    <!-- Blue -->
+                    <div class="target__target-row mb-20  center-flex">
+                        <div class="target__icon blue center-flex  d-flex">
+                            <i data-feather="dollar-sign" class="target__blue-icon" stroke-width="2"></i>
+                        </div>
+
+                        <div class="target__details">
+                            <span class="c-gray fs-14">Mony</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">$2000</span>
+                            <div class="target__progress p-relative">
+                                <span class="bg-blue blue d-block" style="width: 40%;">
+                                    <span class=" target__percent b-radius bg-blue">40%</span>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Blue -->
+                    <div class="target__target-row mb-20  center-flex">
+                        <div class="target__icon orange center-flex  d-flex">
+                            <i data-feather="code" class="target__orange-icon " stroke-width="2"></i>
+                        </div>
+
+                        <div class="target__details">
+                            <span class="c-gray fs-14">Projects</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">24</span>
+                            <div class="target__oranged  p-relative">
+                                <span class="bg-orange orange d-block" style="width: 80%;">
+                                    <span class=" target__percent b-radius bg-orange">80%</span>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- green -->
+                    <div class="target__target-row mb-20  center-flex">
+                        <div class="target__icon green center-flex  d-flex">
+                            <i data-feather="user" class="target__green-icon " stroke-width="2"></i>
+                        </div>
+
+                        <div class="target__details">
+                            <span class="c-gray fs-14">Teams</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">12</span>
+                            <div class="target__green  p-relative">
+                                <span class="bg-green green d-block" style="width: 60%;">
+                                    <span class=" target__percent b-radius bg-green">60%</span>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- End Target Section -->
             </div>
         </main>
         <!-- End ContentPage -->

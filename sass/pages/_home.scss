@@ -1,3 +1,4 @@
+// section welcom
 .welcom {
   &__banner {
     width: 18rem;
@@ -27,6 +28,8 @@
 
   &__viste {
     padding: 0.5rem 1rem;
+    width: 8rem;
+    display: inline-block;
     border-radius: 0.5rem;
     color: #eee;
     text-align: center;
@@ -36,10 +39,86 @@
     }
   }
 }
-
+// section quick draft
 .quick-draft {
-  &__input,&__textarea {
+  &__input,
+  &__textarea {
     padding: 0.5rem;
     background-color: #f1f1f5f9;
+  }
+}
+
+// sectiion target
+.target {
+  &__target-row {
+    margin-top: 2rem;
+  }
+  &__icon {
+    margin-right: 1.5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: .3rem;
+  }
+  &__blue-icon {
+    color: #0077ff68;
+    width: 2rem;
+  }
+  &__orange-icon {
+    color: orangered;
+    width: 2rem;
+  }
+  &__green-icon {
+    color: green;
+    width: 2rem;
+  }
+  &__details {
+    flex: 1;
+  }
+  &__progress,
+  &__oranged,
+  &__green {
+    height: 0.4rem;
+  }
+  &__progress > span,
+  &__oranged > span,
+  &__green > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+  &__progress,
+  .blue {
+    background-color: #0077ff68;
+  }
+
+  &__oranged,
+  .orange {
+    background-color: #ff99005b;
+  }
+  &__green,
+  .green {
+    background-color: rgb(125, 197, 17)
+  }
+
+  &__percent {
+    position: absolute;
+    bottom: 1.6rem;
+    right: -2.2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    &::after {
+      content: "";
+      border-color: transparent;
+      border-width: 0.5rem;
+      border-style: solid;
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translate(-50%);
+      border-top-color: #0077ff;
+       
+    }
   }
 }

@@ -2,6 +2,11 @@
 .d-flex {
   display: flex;
 }
+.center-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .space-between {
   display: flex;
   align-items: center;
@@ -51,6 +56,9 @@
 .mb-20{
   margin-bottom: 2rem;
 }
+.mb-10{
+  margin-bottom: 10;
+}
 .b-radius {
   border-radius: .6rem;
 }
@@ -58,6 +66,12 @@
 // Start Color
 .bg-white {
   background-color: white;
+}
+.bg-orange{
+  background-color: rgb(255, 153, 0);
+}
+.bg-green{
+  background-color: green;
 }
 .colo-blacl {
   color: black;
@@ -102,6 +116,12 @@
 }
 .outline{
   outline: none;
+}
+.fw-bold{
+  font-weight: bold;
+}
+.fs-14{
+  font-size: 1.4rem;
 }
 @media (max-width: 768px) {
   .hide-mobile {

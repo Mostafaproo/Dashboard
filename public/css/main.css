@@ -2,6 +2,11 @@
 .d-flex {
   display: flex; }
 
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .space-between {
   display: flex;
   align-items: center;
@@ -45,11 +50,20 @@
 .mb-20 {
   margin-bottom: 2rem; }
 
+.mb-10 {
+  margin-bottom: 10; }
+
 .b-radius {
   border-radius: .6rem; }
 
 .bg-white {
   background-color: white; }
+
+.bg-orange {
+  background-color: #ff9900; }
+
+.bg-green {
+  background-color: green; }
 
 .colo-blacl {
   color: black; }
@@ -89,6 +103,12 @@
 
 .outline {
   outline: none; }
+
+.fw-bold {
+  font-weight: bold; }
+
+.fs-14 {
+  font-size: 1.4rem; }
 
 @media (max-width: 768px) {
   .hide-mobile {
@@ -289,6 +309,8 @@ a:hover {
 
 .welcom__viste {
   padding: 0.5rem 1rem;
+  width: 8rem;
+  display: inline-block;
   border-radius: 0.5rem;
   color: #eee;
   text-align: center;
@@ -299,3 +321,68 @@ a:hover {
 .quick-draft__input, .quick-draft__textarea {
   padding: 0.5rem;
   background-color: #f1f1f5f9; }
+
+.target__target-row {
+  margin-top: 2rem; }
+
+.target__icon {
+  margin-right: 1.5rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: .3rem; }
+
+.target__blue-icon {
+  color: #0077ff68;
+  width: 2rem; }
+
+.target__orange-icon {
+  color: orangered;
+  width: 2rem; }
+
+.target__green-icon {
+  color: green;
+  width: 2rem; }
+
+.target__details {
+  flex: 1; }
+
+.target__progress, .target__oranged, .target__green {
+  height: 0.4rem; }
+
+.target__progress > span,
+.target__oranged > span,
+.target__green > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%; }
+
+.target__progress,
+.target .blue {
+  background-color: #0077ff68; }
+
+.target__oranged,
+.target .orange {
+  background-color: #ff99005b; }
+
+.target__green,
+.target .green {
+  background-color: #7dc511; }
+
+.target__percent {
+  position: absolute;
+  bottom: 1.6rem;
+  right: -2.2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.2rem 1rem; }
+  .target__percent::after {
+    content: "";
+    border-color: transparent;
+    border-width: 0.5rem;
+    border-style: solid;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%);
+    border-top-color: #0077ff; }
