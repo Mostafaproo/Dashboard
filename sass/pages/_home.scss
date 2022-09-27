@@ -55,8 +55,8 @@
   }
   &__icon {
     margin-right: 1.5rem;
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 5rem;
     border-radius: 0.3rem;
   }
   &__blue-icon {
@@ -145,18 +145,30 @@
   &__img {
     width: 10rem;
     border-radius: 0.6rem;
+    cursor: pointer;
   }
-  &__title{
+  &__title {
     font-size: 1.6rem;
   }
   &__text {
     font-size: 1.2rem;
+    
   }
-  &__time{
-    span{
-      padding:.5rem 1rem;
-      border-radius: .6rem;
+  &__time {
+    span {
+      padding: 0.5rem 1rem;
+      border-radius: 0.6rem;
       font-size: 1.2rem;
     }
+  }
+}
+
+// Start Tasks
+
+.tasks{
+  &__taske-row:not(:last-of-type){
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: .2rem solid #eee;
   }
 }
