@@ -172,3 +172,16 @@
     border-bottom: .2rem solid #eee;
   }
 }
+// Start Search Items
+.search-items{
+  &__items:not(:last-of-type){
+    margin-bottom: 2rem;
+  }
+
+  &__count{
+    span{
+      border-radius: .2rem;
+      padding: .2rem 1rem;
+    }
+  }
+}

@@ -453,3 +453,10 @@ a:hover {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-bottom: .2rem solid #eee; }
+
+.search-items__items:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.search-items__count span {
+  border-radius: .2rem;
+  padding: .2rem 1rem; }
