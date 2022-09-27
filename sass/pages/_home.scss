@@ -57,7 +57,7 @@
     margin-right: 1.5rem;
     width: 7rem;
     height: 7rem;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
   }
   &__blue-icon {
     color: #0077ff68;
@@ -98,7 +98,7 @@
   }
   &__green,
   .green {
-    background-color: rgb(125, 197, 17)
+    background-color: rgb(125, 197, 17);
   }
 
   &__percent {
@@ -118,18 +118,45 @@
       left: 50%;
       transform: translate(-50%);
       border-top-color: #0077ff;
-       
     }
   }
 }
 
 // Start tickets satastics
-.tickets{
-  &__box{
-    border: .2rem solid #ccc;
+.tickets {
+  &__box {
+    border: 0.2rem solid #ccc;
     width: calc(50% - 1rem);
-    @media(max-width: 768px){
+    @media (max-width: 768px) {
       width: 100%;
+    }
+  }
+}
+
+// Start Latest News
+
+.latest-news {
+  &__news-row:not(:last-of-type) {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid #eee;
+  }
+
+  &__img {
+    width: 10rem;
+    border-radius: 0.6rem;
+  }
+  &__title{
+    font-size: 1.6rem;
+  }
+  &__text {
+    font-size: 1.2rem;
+  }
+  &__time{
+    span{
+      padding:.5rem 1rem;
+      border-radius: .6rem;
+      font-size: 1.2rem;
     }
   }
 }
