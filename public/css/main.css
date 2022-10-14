@@ -44,6 +44,9 @@
 .m-20 {
   padding: 1.5rem; }
 
+.mt-25 {
+  margin-top: 2rem; }
+
 .p-5 {
   padding: .5rem; }
 
@@ -481,3 +484,40 @@ img {
 .uploads__img {
   width: 4rem;
   height: 4rem; }
+
+.last-project__project-list::before {
+  content: '';
+  position: absolute;
+  left: .9rem;
+  top: .3rem;
+  width: .2rem;
+  height: 95%;
+  background-color: #0075ff;
+  margin: 0; }
+
+.last-project__item::before {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  border: .2rem solid #fff;
+  outline: 0.2rem solid #0075ff;
+  margin-right: 1.5rem;
+  z-index: 1; }
+
+.last-project__done::before {
+  content: '';
+  background-color: #0075ff; }
+
+.last-project__current::before {
+  content: ''; }
+
+.last-project__launch-icon {
+  position: absolute;
+  right: 0;
+  width: 16rem;
+  height: 16rem;
+  bottom: 0;
+  opacity: .5; }

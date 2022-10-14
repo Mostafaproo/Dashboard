@@ -202,3 +202,45 @@
 
 
 }
+
+// Start Last Project Section
+.last-project{
+  &__project-list::before{
+    content: '';
+    position: absolute;
+    left: .9rem;
+    top: .3rem;
+    width: .2rem;
+    height: 95%;
+    background-color: $blue-color;
+    margin: 0;
+  }
+  &__item::before{
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    border: .2rem solid #fff ;
+    outline: .2rem solid $blue-color;
+    margin-right: 1.5rem;
+    z-index: 1;
+  }
+  &__done::before{
+    content: '';
+    background-color: $blue-color;
+  } 
+  &__current::before{
+    content: '';
+  } 
+
+  &__launch-icon{
+    position: absolute;
+    right: 0;
+    width: 16rem;
+    height: 16rem;
+    bottom: 0;
+    opacity: .5;
+  }
+}
